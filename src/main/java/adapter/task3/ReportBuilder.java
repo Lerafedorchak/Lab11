@@ -1,8 +1,8 @@
-package db;
+package adapter.task3;
 
 public class ReportBuilder {
-    private БазаДаних db;
+    private Database db;
     public ReportBuilder(БазаДаних db) {
-        this.db = db;
+        this.db = (Database) db;
     }
 }
