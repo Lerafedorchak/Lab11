@@ -1,5 +1,7 @@
 package adapter.task2;
 
+import java.time.LocalDate;
+
 public class FacebookClientWrapper implements Client {
     public FacebookUser user;
     public FacebookClientWrapper(FacebookUser user){
@@ -17,7 +19,7 @@ public class FacebookClientWrapper implements Client {
     }
 
     @Override
-    public String getLastActiveTime() {
+    public LocalDate getLastActiveTime() {
         return user.getGetUserActiveTime();
     }
 }
